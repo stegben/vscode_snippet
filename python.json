@@ -21,5 +21,48 @@
 		],
 		"editor.tabCompletion": true,
 		"description": "one line ipdb"
+	},
+    "main": {
+		"prefix": "main",
+		"body": [
+			"def main():",
+            "    $0",
+            "",
+            "",
+            "if __name__ == '__main__':",
+            "    main()"
+		],
+		"editor.tabCompletion": true,
+		"description": "main structure"
+	},
+    "nppd": {
+		"prefix": "nppd",
+		"body": [
+			"import numpy as np",
+            "import pandas as pd"
+		],
+		"editor.tabCompletion": true,
+		"description": "import numpy and pandas"
+	},
+    "function_doc": {
+		"prefix": "funcdoc",
+		"body": [
+			"\"\"\"${1:short description}",
+            "",
+            "${2:short description}",
+            "",
+            "Args:",
+            "    ${3:arguments}",
+            "",
+            "Returns:",
+            "    ${4:return value}",
+            "",
+            "Raises:",
+            "    ${5:error}",
+            "",
+            "\"\"\""
+		],
+		"editor.tabCompletion": true,
+		"description": "document of function"
 	}
 }
